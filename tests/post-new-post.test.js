@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { spec, request } = require('pactum');
 const { it } = require('mocha');
+const { faker } = require('@faker-js/faker');
 const getPostsSchema = require('../data/response/get-posts-schema.json');
 
 const expect = require('chai').expect;
@@ -14,7 +15,7 @@ describe('CREATE Posts Feature', () => {
 	it('should be able to create a post', async () => {
 		const requestBody = {
 			title: 'random',
-			body: 'lorem',
+			body: faker.lorem.paragraph()
 		};
 
 		const resp = await spec()
