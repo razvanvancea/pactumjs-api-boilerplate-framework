@@ -1,4 +1,4 @@
-# PactumJS is a Free & OpenSource REST API Testing Tool for all levels in a Test Pyramid. This boilerplate project is a starter to create automated tests for REST API Endpoints.
+# This boilerplate project is a starter pack for - PactumJS - a Free & OpenSource REST API Testing Tool.
 
 Official Docs: https://pactumjs.github.io/introduction/welcome.html
 
