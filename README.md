@@ -3,7 +3,7 @@
 Official Docs: [HERE](https://pactumjs.github.io/introduction/welcome.html)
 
 ## Prerequisites
-- NodeJS [SETUP Tutorial](https://pactumjs.github.io/introduction/welcome.html)
+- NodeJS [SETUP Tutorial](https://youtu.be/j8HZpFjPPVU)
 - Git [SETUP Tutorial](https://www.youtube.com/watch?v=0XJMg1ZMSEo)
 - Visual Studio Code [Download here](https://code.visualstudio.com/download)
 
