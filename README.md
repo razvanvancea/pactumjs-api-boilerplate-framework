@@ -1,6 +1,6 @@
 # This boilerplate project is a starter pack for - PactumJS - a Free & OpenSource REST API Testing Tool.
 
-Official Docs: https://pactumjs.github.io/introduction/welcome.html
+Official Docs: [HERE](https://pactumjs.github.io/introduction/welcome.html)
 
 ## Prerequisites
 - NodeJS (Installation tutorial https://youtu.be/j8HZpFjPPVU )
