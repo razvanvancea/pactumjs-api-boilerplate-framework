@@ -12,6 +12,5 @@ describe('Comments Feature', () => {
 			.get(`${process.env.PROD_URL}/comments/1`)
 			.expectStatus(200)
 			.expectJsonSchema(getCommentResponseSchema);
-		// assert.isArray(resp.body);
 	});
 });
