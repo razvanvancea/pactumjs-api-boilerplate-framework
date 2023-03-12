@@ -1,10 +1,6 @@
 require('dotenv').config();
-const { spec, request } = require('pactum');
-const { it } = require('mocha');
+const { spec, expect,request, assert } = require('../config');
 const getPostsSchema = require('../data/response/get-posts-schema.json');
-
-const expect = require('chai').expect;
-const { assert } = require('chai');
 
 describe('GET Posts Feature', () => {
 	before(async () => {

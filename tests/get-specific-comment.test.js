@@ -1,10 +1,6 @@
 require('dotenv').config();
-const { spec, request } = require('pactum');
-const { it } = require('mocha');
+const { spec, expect,request, assert } = require('../config');
 const getCommentResponseSchema = require('../data/response/get-comment-schema.json');
-
-const expect = require('chai').expect;
-const { assert } = require('chai');
 
 describe('Comments Feature', () => {
 	before(async () => {

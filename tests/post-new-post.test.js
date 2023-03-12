@@ -1,11 +1,6 @@
 require('dotenv').config();
-const { spec, request } = require('pactum');
-const { it } = require('mocha');
-const { faker } = require('@faker-js/faker');
+const { spec, expect,request, assert, faker } = require('../config');
 const getPostsSchema = require('../data/response/get-posts-schema.json');
-
-const expect = require('chai').expect;
-const { assert } = require('chai');
 
 describe('CREATE Posts Feature', () => {
 	before(async () => {
@@ -22,7 +17,6 @@ describe('CREATE Posts Feature', () => {
 			.post(`${process.env.PROD_URL}/posts`)
 			.withHeaders('Content-Type', 'application/json')
 			.withBody(requestBody)
-			.inspect()
 			.expectStatus(201)
 			.expectJsonLike('title', requestBody.title)
 			.expectJsonLike('body', requestBody.body)
