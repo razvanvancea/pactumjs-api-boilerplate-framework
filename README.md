@@ -1,4 +1,4 @@
-# This boilerplate project is a starter pack for - PactumJS - a Free & OpenSource REST API Testing Tool.
+# Boilerplate project as a starter pack for - PactumJS - a Free & OpenSource REST API Testing Tool.
 
 Official Docs: [HERE](https://pactumjs.github.io/introduction/welcome.html)
 
