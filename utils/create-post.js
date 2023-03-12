@@ -5,7 +5,7 @@ const { spec, faker } = require('../config');
 
 async function createPost() {
 	const requestBody = {
-		title: 'random',
+		title: faker.word.noun(),
 		body: faker.lorem.paragraph(),
 	};
 
