@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { spec, expect,request, assert } = require('../config');
+const { spec, expect, request, assert } = require('../config');
 const getPostsSchema = require('../data/response/get-posts-schema.json');
 
 describe('GET Posts Feature', () => {

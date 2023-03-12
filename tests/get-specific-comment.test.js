@@ -1,5 +1,5 @@
 require('dotenv').config();
-const { spec, expect,request, assert } = require('../config');
+const { spec, expect, request, assert } = require('../config');
 const getCommentResponseSchema = require('../data/response/get-comment-schema.json');
 
 describe('Comments Feature', () => {
