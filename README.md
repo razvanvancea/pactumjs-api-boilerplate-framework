@@ -16,3 +16,5 @@ npm install
 ```sh
 npm run api-tests
 ```
+
+The results will be displayed in the CLI and as HTML file in the 'results' folder, located in the project root.

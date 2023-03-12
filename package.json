@@ -8,7 +8,7 @@
 	"scripts": {
 		"prettier:check": "npx prettier --check .",
 		"prettier:fix": "npx prettier --write .",
-		"api-tests": "./node_modules/.bin/mocha tests --reporter spec --reporter mochawesome --timeout=10000",
+		"api-tests": "./node_modules/.bin/mocha tests --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000",
 		"prepare": "husky install"
 	},
 	"devDependencies": {
