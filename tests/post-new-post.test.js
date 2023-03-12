@@ -14,7 +14,7 @@ describe('CREATE Posts Feature', () => {
 
 	it('should be able to create a post', async () => {
 		const requestBody = {
-			title: 'random',
+			title: faker.word.noun(),
 			body: faker.lorem.paragraph(),
 		};
 
