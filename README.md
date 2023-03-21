@@ -32,5 +32,5 @@ npm run api-tests
 ```
 <br />
 
-The results will be displayed in the CLI and as HTML file in the **results** folder, located in the project root.
+The test execution results will be displayed in the console and also generated as HTML file in the **results** folder, located in the project root.
 </span>
