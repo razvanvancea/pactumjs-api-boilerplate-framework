@@ -26,7 +26,7 @@ npm install
 ```
 <br />
 
-## Run Tests via CLI
+## Run Tests via CLI - Mochawesome HTML results report
 ```sh
 npm run api-tests
 ```
@@ -34,3 +34,11 @@ npm run api-tests
 
 The test execution results will be displayed in the console and also generated as HTML file in the **results** folder, located in the project root.
 </span>
+
+
+## Run Tests via CLI - Allure HTML results report (Prerequisite: Java JDK)
+```sh
+npm run allure:test
+npm run allure:open
+```
+<br />
