@@ -1,6 +1,5 @@
 ## Boilerplate project as a **starter pack** for - **PactumJS** - a Free & OpenSource REST API Testing Tool.
 
-<span align="center">
 
 <br />
 
@@ -33,7 +32,7 @@ npm run api-tests
 <br />
 
 The test execution results will be displayed in the console and also generated as HTML file in the **results** folder, located in the project root.
-</span>
+
 
 
 ## Run Tests via CLI - Allure HTML results report (Prerequisite: Java JDK)
