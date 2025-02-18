@@ -8,7 +8,7 @@
 	"scripts": {
 		"prettier:check": "npx prettier --check .",
 		"prettier:fix": "npx prettier --write .",
-		"api-tests": "./node_modules/.bin/mocha tests --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000",
+		"api-tests": "npx mocha tests --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000",
 		"prepare": "husky install",
 		"allure:test": "rimraf allure-report && rimraf allure-results && npx mocha tests --reporter mocha-allure-reporter --timeout=10000 && npx allure generate ./allure-results",
 		"allure:open": "npx allure open"
