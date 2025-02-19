@@ -28,7 +28,7 @@
 		"rimraf": "^5.0.1"
 	},
 	"dependencies": {
-		"pactum-cli-select": "file:pactum-cli-select-1.2.1.tgz",
+		"pactum-cli-select": "^1.2.4",
 		"prettier": "^2.7.1"
 	}
 }
