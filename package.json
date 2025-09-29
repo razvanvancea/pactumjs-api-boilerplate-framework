@@ -1,34 +1,34 @@
 {
-	"name": "rv",
-	"version": "1.0.0",
-	"description": "PactumJS API Boilerplate Project",
-	"main": "index.js",
-	"author": "Razvan Vancea",
-	"license": "ISC",
-	"scripts": {
-		"prettier:check": "npx prettier --check .",
-		"prettier:fix": "npx prettier --write .",
-		"api-tests": "npx mocha tests --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000",
-		"prepare": "husky install",
-		"allure:test": "rimraf allure-report && rimraf allure-results && npx mocha tests --reporter mocha-allure-reporter --timeout=10000 && npx allure generate ./allure-results",
-		"allure:open": "npx allure open"
-	},
-	"devDependencies": {
-		"@faker-js/faker": "^7.6.0",
-		"allure-commandline": "^2.23.1",
-		"chai": "^4.3.7",
-		"dotenv": "^16.0.3",
-		"eslint": "^8.26.0",
-		"husky": "^8.0.0",
-		"mocha": "^10.2.0",
-		"mocha-allure-reporter": "^1.4.0",
-		"mochawesome": "^7.1.3",
-		"npx": "^10.2.2",
-		"pactum": "^3.2.3",
-		"rimraf": "^5.0.1"
-	},
-	"dependencies": {
-		"pactum-cli-select": "^1.2.4",
-		"prettier": "^2.7.1"
-	}
+  "name": "rv",
+  "version": "1.0.0",
+  "description": "PactumJS API Boilerplate Project",
+  "main": "index.js",
+  "author": "Razvan Vancea",
+  "license": "ISC",
+  "scripts": {
+    "prettier:check": "npx prettier --check .",
+    "prettier:fix": "npx prettier --write .",
+    "api-tests": "npx mocha tests --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000",
+    "prepare": "husky install",
+    "allure:test": "rimraf allure-report && rimraf allure-results && npx mocha tests --reporter mocha-allure-reporter --timeout=10000 && npx allure generate ./allure-results",
+    "allure:open": "npx allure open"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "allure-commandline": "^2.34.1",
+    "chai": "^6.2.0",
+    "dotenv": "^17.2.2",
+    "eslint": "^9.36.0",
+    "husky": "^9.1.7",
+    "mocha": "^11.7.2",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^7.1.4",
+    "npx": "^10.2.2",
+    "pactum": "^3.6.2",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "pactum-cli-select": "^1.3.3",
+    "prettier": "^3.6.2"
+  }
 }
