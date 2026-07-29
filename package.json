@@ -6,15 +6,19 @@
   "author": "Razvan Vancea",
   "license": "ISC",
   "scripts": {
+    "format": "npx oxfmt .",
     "prettier:check": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
     "api-tests": "npx mocha tests --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000",
     "prepare": "husky install",
     "allure:test": "rimraf allure-report && rimraf allure-results && npx mocha tests --reporter mocha-allure-reporter --timeout=10000 && npx allure generate ./allure-results",
-    "allure:open": "npx allure open"
+    "allure:open": "npx allure open",
+    "test:prod": "cross-env ENV=prod mocha tests --require dotenv/config --require ./lib/env-setup.js --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000",
+    "test:dev": "cross-env ENV=dev mocha tests --require dotenv/config --require ./lib/env-setup.js --reporter spec --reporter mochawesome --reporter-options reportDir=results --timeout=10000"
   },
   "devDependencies": {
-    "@faker-js/faker": "^10.0.0",
+    "@faker-js/faker": "^10.5.0",
+    "cross-env": "^7.0.3",
     "allure-commandline": "^2.34.1",
     "chai": "^6.2.0",
     "dotenv": "^17.2.2",
@@ -24,11 +28,11 @@
     "mocha-allure-reporter": "^1.4.0",
     "mochawesome": "^7.1.4",
     "npx": "^10.2.2",
+    "oxfmt": "^0.61.0",
     "pactum": "^3.6.2",
     "rimraf": "^6.0.1"
   },
   "dependencies": {
-    "pactum-cli-select": "^1.3.3",
-    "prettier": "^3.6.2"
+    "pactum-cli-select": "^1.3.3"
   }
 }
